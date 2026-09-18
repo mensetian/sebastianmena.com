@@ -1,0 +1,5 @@
+# Credenciales FTP — la plantilla sin clave es .vscode/sftp.json.example
+.vscode/sftp.json
+
+.DS_Store
+Thumbs.db

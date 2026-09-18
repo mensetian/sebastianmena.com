@@ -1,0 +1,12 @@
+{
+    "name": "mensetian",
+    "host": "ftp.conmenas.com",
+    "protocol": "ftp",
+    "port": 21,
+    "username": "mensetian@sebastianmena.conmenas.com",
+    "password": "NO_VA_EN_GIT",
+    "remotePath": "/",
+    "uploadOnSave": true,
+    "useTempFile": false,
+    "openSsh": false
+}

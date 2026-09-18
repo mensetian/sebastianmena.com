@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Sebastián Mena, a skilled Software Engineer showcasing innovative projects and expertise.">
+    <meta name="keywords" content="Sebastián Mena, Software Engineer, Portfolio, Web Development">
+    <meta name="author" content="Sebastián Mena">
+    <meta property="og:title" content="Sebastián Mena - Software Engineer">
+    <meta property="og:description"
+        content="Explore the portfolio of Sebastián Mena, featuring cutting-edge software projects.">
+    <meta property="og:image" content="https://sebastianmena.conmenas.com/favicon.png">
+    <meta property="og:url" content="https://sebastianmena.conmenas.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Sebastián Mena - Software Engineer</title>
+    <link rel="stylesheet" href="pintura.css">
+    <link rel="icon" href="images/favicon-32x32.png" type="image/png">
+</head>
+
+<body>
+    <canvas id="stars" aria-hidden="true"></canvas>
+    <header role="banner" id="top_header">
+        <h1><a href="/">Sebastián Mena</h1></a>
+        <p data-i18n="profession">Software Engineer & Digital Designer</p>
+        <div class="controls">
+            <!-- <div class="star-count">
+                <span id="starCountValue">1200</span>
+            </div> -->
+            <input type="range" id="starCount" min="50" max="1900" value="1200" step="5">
+        </div>
+    </header>
+    <nav role="navigation" id="menu">
+        <ul>
+            <li data-menu="about"><a href="#about" data-i18n="menu_about">ABOUT ME</a></li>
+            <li><a href="#portfolio" data-i18n="menu_portfolio">PORTFOLIO</a></li>
+            <li><a href="#experience" data-i18n="menu_experience">EXPERIENCE</a></li>
+            <li><a href="#contact" data-i18n="menu_contact">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <main role="main" id="main_scroll">
+        <section id="about">
+            <div class="image-container">
+                <img src="images/me-pixel.png" alt="Me" class="image-default" loading="lazy">
+                <img src="images/me-pixel-sb.png" alt="Me & SB" class="image-hover" loading="lazy">
+            </div>
+            <p data-i18n="about">Hi, I’m Sebastian Mena, a software developer with 8+ years building websites, apps, and
+                visuals that help
+                businesses shine. I create user-friendly, high-performing solutions with JavaScript, PHP, Python,
+                React.js, C#, HTML, and CSS. Need a sleek interface? I design with Adobe XD and Photoshop. Want standout
+                graphics or videos? I use Adobe Premiere. My university portal handled thousands of users flawlessly,
+                and my registration system cut errors by 30%. I’m your partner for custom solutions, clear
+                communication, and on-time delivery. Let’s make your project a success—message me now!</p>
+        </section>
+
+        <section id="portfolio">
+            <div class="projects-container" role="navigation" aria-label="Portfolio projects">
+                <!-- Project 0 -->
+                <a href="https://conmenas.com/index.php" aria-label="View Clothing Store Web Site" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="project-item">
+                        <div class="project-image-col">
+                            <img src="images/new_logo_conmenas_wt.png" alt="Clothing Store Web Site" loading="lazy">
+                        </div>
+                        <div class="project-info-col">
+                            <h3 class="project-title" data-i18n="project0_title">Clothing Store Web Site</h3>
+                            <p class="project-description" data-i18n="project0_desc">
+                                A modern e-commerce platform featuring a responsive design, seamless product browsing,
+                                and
+                                secure payment integration for an enhanced shopping experience, currently under
+                                development.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project 1 -->
+                <a href="https://elviajedelacafetera.conmenas.com/" aria-label="View Innovative Scroll Website"
+                    target="_blank" rel="noopener noreferrer">
+                    <div class="project-item">
+                        <div class="project-image-col">
+                            <img src="images/cafetera.png" alt="Innovative Scroll Website with Animations"
+                                loading="lazy">
+                        </div>
+                        <div class="project-info-col">
+                            <h3 class="project-title" data-i18n="project1_title">Innovative Scroll Website with
+                                Animations
+                            </h3>
+                            <p class="project-description" data-i18n="project1_desc">
+                                A visually engaging website with smooth scroll-triggered animations, built using
+                                experimental JavaScript to deliver an immersive user experience.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project 2 -->
+                <a href="https://lima.conmenas.com/index.php" aria-label="View Clothing Store Admin Web Site"
+                    target="_blank" rel="noopener noreferrer">
+                    <div class="project-item">
+                        <div class="project-image-col">
+                            <img src="images/lima.png" alt="Clothing Store Admin Web Site" loading="lazy">
+                        </div>
+                        <div class="project-info-col">
+                            <h3 class="project-title" data-i18n="project2_title">Clothing Production Line Admin Web Site
+                            </h3>
+                            <p class="project-description" data-i18n="project2_desc">
+                                A centralized admin dashboard for managing clothing production workflows, including
+                                order
+                                tracking, inventory control and other essential functions. Designed to streamline
+                                operations
+                                for
+                                manufacturers with real-time data visualization and reporting tools.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project 3 -->
+                <a href="https://aspirante.ufpso.edu.co/app/#inicio" aria-label="View Scalable Applicant System"
+                    target="_blank" rel="noopener noreferrer">
+                    <div class="project-item">
+                        <div class="project-image-col">
+                            <img src="images/ufpso.png" alt="Scalable System for Managing New Applicants"
+                                loading="lazy">
+                        </div>
+                        <div class="project-info-col">
+                            <h3 class="project-title" data-i18n="project3_title">Scalable System for Managing New
+                                Applicants
+                            </h3>
+                            <p class="project-description" data-i18n="project3_desc">
+                                A robust software system optimized for high-volume applicant data processing, ensuring
+                                efficient management and scalability for recruitment workflows.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project 4 -->
+                <a href="https://adminaspirante.ufpso.edu.co/autenticacion/#admisiones"
+                    aria-label="View Dynamic Certificate Generator" target="_blank" rel="noopener noreferrer">
+                    <div class="project-item">
+                        <div class="project-image-col">
+                            <img src="images/ufpso.png" alt="Dynamic Certificate Generator for Education Office"
+                                loading="lazy">
+                        </div>
+                        <div class="project-info-col">
+                            <h3 class="project-title" data-i18n="project4_title">Dynamic Certificate Generator for
+                                Education
+                                Office</h3>
+                            <p class="project-description" data-i18n="project4_desc">
+                                An automated tool for generating customized certificates with dynamic data integration,
+                                designed to streamline administrative tasks for educational institutions.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project 5 -->
+                <a href="https://webufpso.edu.co" aria-label="View Dynamic Institutional Web Portal" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="project-item">
+                        <div class="project-image-col">
+                            <img src="images/ufpso.png" alt="Dynamic Institutional Web Portal" loading="lazy">
+                        </div>
+                        <div class="project-info-col">
+                            <h3 class="project-title" data-i18n="project5_title">Dynamic Institutional Web Portal</h3>
+                            <p class="project-description" data-i18n="project5_desc">
+                                A comprehensive web portal for institutions, featuring dynamic content management, user
+                                authentication, accessibility and responsive design for seamless access across devices.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="experience">
+            <ol>
+                <li class="timeline-item">
+                    <div class="timeline-date">
+                        <header>2024</header>
+                    </div>
+                    <div class="timeline-content">
+                        <h2>Spring Global</h2>
+                        <h3 data-i18n="exp0_title">Support & Software developer</h3>
+                        <p data-i18n="exp0_desc">
+                            I provided technical support for mobile applications by integrating new functionalities and
+                            enhancing existing features to improve performance and better meet user needs. Additionally,
+                            I conducted in-depth database analysis, generated precise reports, and developed customized
+                            procedures to optimize information management through integration interfaces and specialized
+                            processes
+                        </p>
+                        <ul class="skills-list">
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-date">
+                        <header>2021 — 2023</header>
+                    </div>
+                    <div class="timeline-content">
+                        <h2>UFPSO</h2>
+                        <h3 data-i18n="exp1_title">Full Stack Developer</h3>
+                        <p data-i18n="exp1_desc">
+                            I developed and designed the new institutional web portal, incorporating the
+                            latest trends in web development. Optimized to handle large volumes of
+                            information and is managed through a custom content controller, fully dynamic
+                            and adapted to the specific needs of the project.
+                        </p>
+                        <ul class="skills-list">
+                            <li>PHP</li>
+                            <li>JavaScript</li>
+                            <li>ReactJS</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-date">
+                        <header>2015 — 2019</header>
+                    </div>
+                    <div class="timeline-content">
+                        <h2>UFPSO</h2>
+                        <h3 data-i18n="exp2_title">Full Stack Developer</h3>
+                        <p data-i18n="exp2_desc">
+                            I led the development and design of a high-demand registration system to manage new
+                            university applicants, integrating the database, implementing solutions to ensure stability
+                            and optimal performance under heavy user traffic, and creating an intuitive user interface
+                            for a seamless experience. Additionally, I developed a dynamic certificate generator for the
+                            continuing education office, designed to efficiently produce diplomas through an interactive
+                            and user-friendly tool accessible to non-technical users.
+                        </p>
+                        <ul class="skills-list">
+                            <li>JavaScript</li>
+                            <li>JQuery</li>
+                            <li>PHP</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section id="contact">
+            <p data-i18n="contact">If you want to contact me, you can do so through the following means:</p>
+            <nav class="social" aria-label="Social media links">
+                <a href="mailto:mensetian@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/mail-outline.svg" alt="Email logo" width="32" height="32">
+                </a>
+                <a href="https://wa.me/573142064039?text=Hello%20I%20saw%20your%20work%20and%20I%27m%20interested!"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="icons/logo-whatsapp.svg" alt="Email logo" width="32" height="32">
+                </a>
+                <a href="https://linkedin.com/in/mensetian" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/logo-linkedin.svg" alt="LinkedIn logo" width="32" height="32">
+                </a>
+                <a href="https://Instagram.com/mensetian" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/logo-instagram.svg" alt="Instagram logo" width="32" height="32">
+                </a>
+            </nav>
+            <p class="mail_text">mensetian@gmail.com</p>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <div class="language-switch" role="region" aria-label="Language switcher">
+            <label class="switch" for="lang-toggle">
+                <input type="checkbox" id="lang-toggle" aria-label="Toggle between English and Spanish">
+                <span class="slider">
+                    <span class="lang-text">EN</span>
+                    <span class="lang-text">ES</span>
+                </span>
+            </label>
+        </div>
+    </footer>
+    <script src="motor.js"></script>
+    <script src="habla.js"></script>
+    <script src="scroll.js"></script>
+</body>
+
+</html>
